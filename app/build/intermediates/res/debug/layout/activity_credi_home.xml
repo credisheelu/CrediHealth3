@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.credihealth3.CrediHomeActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <EditText
+            android:id="@+id/searchEt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/searchIBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_search" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_marginTop="100dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/filterBt"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        
+        android:text="Filters" />
+
+</RelativeLayout><!-- From: file:/home/sheelu/AndroidStudioProjects/CrediHealth3/app/src/main/res/layout/activity_credi_home.xml -->
